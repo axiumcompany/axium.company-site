@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axium • Boas-vindas</title>
+  <meta name="description" content="Bem-vindo à Axium. Criando o próximo nível do digital.">
+  <link rel="icon" href="axium-logo.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --axium-black: #0b0b0b;
+      --axium-white: #fff;
+      --axium-green: #21ff99;
+      --axium-gray: #232323;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: var(--axium-black);
+      color: var(--axium-white);
+      font-family: 'Montserrat', Arial, sans-serif;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #181818 0%, #0b0b0b 100%);
+    }
+    .axium-logo {
+      max-width: 84px;
+      margin-bottom: 2.5rem;
+      filter: brightness(200%);
+      user-select: none;
+    }
+    .welcome-box {
+      background: linear-gradient(135deg, #171717 80%, #222 100%);
+      border-radius: 24px;
+      box-shadow: 0 4px 36px #000b 0.6;
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      border: 1.5px solid #272727;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .welcome-title {
+      font-family: 'Orbitron', 'Montserrat', Arial, sans-serif;
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      letter-spacing: 1.5px;
+      color: var(--axium-green);
+      text-shadow: 0 0 12px #21ff9938, 0 0 4px #fff2;
+      animation: fadein 1.2s cubic-bezier(.19,1,.22,1);
+    }
+    .welcome-text {
+      font-size: 1.13rem;
+      font-weight: 400;
+      color: #e0e0e0;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      animation: fadein 1.6s cubic-bezier(.19,1,.22,1);
+      animation-delay: 0.2s;
+      animation-fill-mode: both;
+    }
+    .pixel-title {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.48rem;
+      color: #cfffda;
+      letter-spacing: 0.5px;
+      text-shadow: 0 0 6px #21ff99cc, 0 0 2px #fff;
+      margin-bottom: 1.3rem;
+      animation: glow 2.5s infinite alternate;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(18px);}
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 6px #21ff99cc, 0 0 2px #fff; }
+      to { text-shadow: 0 0 16px #21ff99cc, 0 0 6px #fff; }
+    }
+    .axium-footer {
+      font-size: 0.93rem;
+      color: #555;
+      position: fixed;
+      bottom: 22px;
+      width: 100vw;
+      text-align: center;
+      letter-spacing: 0.04em;
+      font-weight: 400;
+      opacity: 0.7;
+      pointer-events: none;
+      z-index: 1;
+    }
+    @media (max-width: 600px) {
+      .welcome-box {
+        padding: 1.4rem 1rem 1.2rem 1rem;
+      }
+      .welcome-title {
+        font-size: 1.45rem;
+      }
+      .pixel-title {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="axium-logo.svg" alt="Axium Logo" class="axium-logo" draggable="false" />
+
+  <section class="welcome-box" aria-label="Boas-vindas à Axium">
+    <div class="pixel-title">Hello world!</div>
+    <div class="welcome-title">Bem-vindo à Axium</div>
+    <div class="welcome-text">
+      Criando o próximo nível do digital.<br>
+      <span style="color:var(--axium-green); opacity:.8;">#LevelUp</span>
+    </div>
+  </section>
+
+  <div class="axium-footer">
+    © 2025 Axium. Todos os direitos reservados.
+  </div>
+</body>
+</html>
